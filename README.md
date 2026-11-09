@@ -109,9 +109,9 @@ VLANs are configured on the Cisco 2960 switch to separate the three departments 
 
 | VLAN ID | VLAN Name | Department |
 |---|---|---|
-| 10 | ADMIN_IT | Admin / IT |
-| 20 | FINANCE_HR | Finance / HR |
-| 30 | CUSTOMER_SERVICE | Customer Service |
+| 10 | Admin | Admin / IT |
+| 20 | FInance | Finance / HR |
+| 30 | CUstomer | Customer Service |
 
 Each departmental switch port is configured as an access port belonging to its respective VLAN.
 
