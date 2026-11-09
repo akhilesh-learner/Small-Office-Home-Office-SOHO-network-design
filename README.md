@@ -241,7 +241,7 @@ Perform ping tests between devices belonging to different departments to verify 
 
 ### 🖥️ Final Network Topology
 
-![Network Topology](topology/topology-design.png)
+![Network Topology](topology/topology-design.PNG)
 
 ## 🛠️ Technologies and Tools Used
 
