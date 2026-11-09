@@ -1,0 +1,54 @@
+enable
+configure terminal
+
+---
+
+interface gigabitEthernet 0/0
+no shutdown
+exit
+
+--- 
+
+#DHCP configuration
+
+interface gigabitEthernet 0/0.10
+encapsulation dot1Q 10
+ip address 192.168.1.1 255.255.255.192
+exit
+
+interface gigabitEthernet 0/0.20
+encapsulation dot1Q 20
+ip address 192.168.1.65 255.255.255.192
+exit
+
+interface gigabitEthernet 0/0.30
+encapsulation dot1Q 30
+ip address 192.168.1.129 255.255.255.192
+exit
+
+---
+
+ip dhcp pool Admin-Pool
+network 192.168.1.0 255.255.255.192
+default-router 192.168.1.1
+dns-server 8.8.8.8
+domain-name Admin.com
+exit
+
+ip dhcp pool Finance-Pool
+network 192.168.1.64 255.255.255.192
+default-router 192.168.1.65
+dns-server 8.8.8.8
+domain-name Finance.com
+exit
+
+ip dhcp pool Customer-Pool
+network 192.168.1.128 255.255.255.192
+default-router 192.168.1.129
+dns-server 8.8.8.8
+domain-name CS.com
+exit
+
+do wr
+
+---
