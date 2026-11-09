@@ -10,7 +10,7 @@ The network is designed and simulated using Cisco Packet Tracer, incorporating V
 
 ## Case-study
 
-![Question](screenshots/case-study.png)
+![Question](screenshots/case-study.PNG)
 
 ## 🎯 Project Objectives
 
